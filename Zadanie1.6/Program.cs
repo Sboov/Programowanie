@@ -5,12 +5,12 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Witaj w programie do liczenia długości odcinków pomiędzy 2 punktami na płaszczyźnie.\nPodaj współrzędne punktu A (X oraz Y): ");
-            int x1 = int.Parse(Console.ReadLine());
-            int y1 = int.Parse(Console.ReadLine());
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Podaj teraz współrzędne punktu B (X oraz Y)");
-            int x2 = int.Parse(Console.ReadLine());
-            int y2 = int.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());
 
             double Result = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));    //Math.Pow() sluzy do potegowania (double coś_tam = Math.Pow(X, Y)
                                                                                        //gdzie X to liczba, którą chcemy podnieść do potęgi a Y to liczba
