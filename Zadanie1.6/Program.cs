@@ -17,10 +17,11 @@
                                                                                        //do której chcemy podnieść podstawe. Przykłady double result = Math.pow(2,3) to nic innego jak 2^3
                                                                                        //Math.Sqrt słuzy do obliczania pierwiastka kwadratowego z liczby. (double coś_tam = Matth.Sqrt(X)
                                                                                        //gdzie X to pierwiastek
-            Console.WriteLine("Długość odcinka o punkcie A, którego współrzędne wynoszą X = {0} oraz Y = {1} oraz punktu B ze współrzędnymi X = {2} oraz {3} wynosi {4:F2}", x1, y1, x2, y1, Result); //wynik formatuje sie do dwóch miejsc po przecinku
+            Console.WriteLine("Długość odcinka o punkcie A, którego współrzędne wynoszą X = {0} oraz Y = {1} oraz punktu B ze współrzędnymi X = {2} oraz {3} wynosi {4:F2}", x1, y1, x2, y2, Result); //wynik formatuje sie do dwóch miejsc po przecinku
 
 
 
         }
     }
 }
+//sprawdzic ujemny wynik
