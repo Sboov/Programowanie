@@ -24,4 +24,7 @@
         }
     }
 }
-//sprawdzic ujemny wynik
+//zadanie robione w grupie:
+//Patryk Padoł
+//Gracjan Pajor
+//Radosław Osypka
