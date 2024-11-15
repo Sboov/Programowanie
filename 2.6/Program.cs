@@ -15,11 +15,11 @@
                 liczba2 = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Podaj trzecią liczbę całkowtią różną od 0");
-                liczba3 = int.Parse(Console.ReadLine());
+                liczba3 = int.Parse(Console.ReadLine());                                    
 
                 if (liczba1 == 0 || liczba2 == 0 || liczba3 == 0)
                 {
-                    throw new ArgumentException("liczby muszą być różne od 0.");
+                    throw new ArgumentException("liczby muszą być różne od 0.");    //ArgumentException zgłasza błąd gdy podana liczba jest zerem. 
 
                 }
                 int najwieksza = Math.Max(liczba1, Math.Max(liczba2, liczba3)); //Math.Max zarowno jak Math.Min porownuja tylko dwa argumenty liczbowe.
@@ -36,9 +36,10 @@
             {
                 Console.WriteLine($"Błąd: {ex.Message}");
             }
-            catch (FormatException)
+            catch (FormatException)    //tutaj program sprawda czy podane dane są porpawne. W moim kodzie jesli ktos poda liczbe zmienno przecinkowa badz litere/znak specjalny to wyswietli sie spejcalny komunikat błedu.
+                                       
             {
-                Console.WriteLine("Podaj liczbę całkowitą");
+                Console.WriteLine("Podaj liczbę całkowitą");   
             }
 
         }
