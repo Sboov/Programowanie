@@ -4,22 +4,26 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj swoją średnia ocen a ja sprawdzę przysługującą kwote stypendium");
+            Console.WriteLine("Podaj swoją średnią ocen, a ja sprawdzę przysługującą kwotę stypendium");
             double srednia = double.Parse(Console.ReadLine());
-            if (srednia >= 2.00 && srednia <= 4.00)
+
+            
+            if (srednia < 2.00)
             {
-                Console.WriteLine("Nie przeysługuje Ci stypendium");
+                Console.WriteLine("Nie przysługuje Ci stypendium");
             }
-            if (srednia >= 4.01 && srednia <= 4.80)
+            else if (srednia >= 4.00 && srednia <= 4.80)
             {
                 Console.WriteLine("Przysługuje Ci 300,00 zł stypendium");
-
             }
-            if (srednia >= 4.81 && srednia <= 5.00)
-                {
+            else if (srednia > 4.80 && srednia <= 5.00)
+            {
                 Console.WriteLine("Przysługuje Ci 600,00 zł stypendium");
             }
-
+            else
+            {
+                Console.WriteLine("Nie przysługuje Ci stypendium");
+            }
         }
     }
 }
