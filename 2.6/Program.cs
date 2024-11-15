@@ -28,7 +28,8 @@
                 int najmniejsza = Math.Min(liczba1, Math.Min(liczba2, liczba3));
 
                 Console.WriteLine("Najwieksza liczba to: {0}", najwieksza);
-                Console.WriteLine($"Najmniejsza liczba to: {najmniejsza}");
+
+  Console.WriteLine($"Najmniejsza liczba to: {najmniejsza}");
 
             }
             catch (ArgumentException ex)
